@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>超级跑车品牌</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<style>
+	*{font-family: "微软雅黑";}
+	body{
+		padding-top: 50px;
+		/*color: #fff;*/
+	}
+	.dropdown-menu{	
+		background-color: rgb(34,34,34);
+	}
+	.dropdown-menu li>a{
+		color: #fff;
+	}
+	.carousel{
+		height: 500px;
+		background-color: #000;
+	}
+	.carousel .item{
+		height: 500px;
+		background-color: #000;
+	}
+	.carousel .item p{
+		line-height: 1.8em;
+	}
+	.carousel img{
+		width: 100%;
+	}
+	.left {
+		background: url("image/left.png") no-repeat left center;
+	}
+	.right {
+		background: url(image/right.png) no-repeat right center;
+	}
+	.container .row .col-md-4 img{
+		width: 250px;
+		height: 180px;
+	}
+	.container .row .col-md-4{
+		text-align: center;
+	}
+	hr>.dividered{
+		margin: 80px 0;
+	}
+	.feauture{
+		margin-top: 50px;
+		/*text-align: center;*/
+	}
+	.feauture h2{
+		font-size: 40px;
+		color: #2a6496;
+	}
+	.feauture span{
+		font-size: 28px;
+		color: #999;
+	}
+	.tab-pane{
+		padding: 10px 0;
+	}
+	#footer{
+		
+		background-color: #343;
+		padding: 20px 100px;
+		font-weight: bold;
+
+	}
+	</style>
+</head>
+<body>
+	<!-- 导航条 -->
+	<div class = "navbar navbar-default navbar-inverse navbar-fixed-top" role = "navigation">
+	  	<div class = "container">
+	  		<div class = "navbar-header">
+	 			 <button type = "button" class = "navbar-toggle collapsed" data-toggle = "collapse" data-target = "#collapse-1" >
+	  				<span class="sr-only">Toggle navigation</span>
+	 				<span class="icon-bar"></span>
+	  				<span class="icon-bar"></span>
+	  				<span class="icon-bar"></span>
+	  			</button>
+	  			<a href="#" class="navbar-brand">超级跑车品牌</a>
+	  		</div>
+	  		<div class = "collapse navbar-collapse" id = "collapse-1">
+		  		<ul class="nav navbar-nav">
+		  			<li class = "active"><a href="#">综述</a></li>
+		  			<li><a href="#column">简述</a></li>
+		  			<li class = "dropdown"><a class = "dropdown-toggle" data-toggle ="dropdown" href="#">特点<span class = "caret"></span></a>
+		  				<ul class = " dropdown-menu" role = "menu">
+		  					<li><a href="#bujiadi">布加迪</a></li>
+		  					<li><a href="#kenisaige">柯尼塞格</a></li>
+		  					<li><a href="#pajiani">帕加尼</a></li>
+		  					<li class= "divider"></li>
+		  					<li><a href="#falali">法拉利</a></li>
+							<li><a href="#lanbojini">兰博基尼</a></li>
+
+		  				</ul>
+		  			</li>
+		  			<li><a href="#" data-toggle = "modal" data-target = "#modal-example">关于</a></li>
+		  		</ul>
+	  		</div>
+	 	</div>
+	</div>
+
+		<!-- 轮播图 -->
+		<div id = "carousel-example" class = "carousel slide">
+			<ol class  ="carousel-indicators">
+				<li class = "active" data-target = "#carousel-example" data-slide-to="0"></li>
+				<li data-target = "#carousel-example" data-slide-to="1"></li>
+				<li data-target = "#carousel-example" data-slide-to="2"></li>
+				<li data-target = "#carousel-example" data-slide-to="3"></li>
+				<li data-target = "#carousel-example" data-slide-to="4"></li>
+			</ol>
+			<div class = "carousel-inner">
+				<div class="item active"><a href="#"><img src="image/布加迪.jpg" alt="布加迪"></a><div class="carousel-caption">
+					<h3>布加迪</h3>
+					<p>布加迪当时是以精巧的造车技术出名。是由意大利人埃多尔·布加迪（Ettore Bugatti）在1909年创造。</p>
+					<p><a href="http://www.bugatti.com/home/" class="btn btn-lg btn-primary" target="_blank">查看详情</a></p>
+				</div></div>
+				<div class="item"><a href="#"><img src="image/柯尼塞格.jpg" alt="柯尼塞格"></a><div class="carousel-caption">
+					<h3>柯尼塞格</h3>
+					<p>Koenigsegg一词是“刀锋”的意思，在国内曾被翻译为“柯尼赛格”，是瑞典一家汽车公司。</p>
+					<p><a href="http://www.autohome.com.cn/spec/9582/" class="btn btn-lg btn-primary" target="_blank">查看详情</a></p>
+				</div></div>
+				<div class="item"><a href="#"><img src="image/帕加尼.jpg" alt="帕加尼"></a><div class="carousel-caption">
+					<h3>帕加尼</h3>
+					<p>帕加尼所生产的超级跑车以极致的性能、大量采用纯手工打造的精湛工艺、昂贵的售价以及订单生产的稀有产量闻名于世。</p>
+					<p><a href="http://baike.baidu.com/link?url=CzgaPSHuIWh8UT7ILmiWI0vuqGJWxTxIEeVzUDEUiKnm2R1nE4poC1N5XqGLsUBlg4MX7MyomZqi1LZb_jTExvMMkFriyWodI8cb8NUb09Ve--aQiBDnGAHfa4nOA2zZ" class="btn btn-lg btn-primary" target="_blank">查看详情</a></p>
+				</div></div>
+				<div class="item"><a href="#"><img src="image/法拉利.jpg" alt="法拉利"></a><div class="carousel-caption">
+					<h3>法拉利</h3>
+					<p>法拉利是世界闻名的赛车和运动跑车的生产厂家，早期的法拉利赞助赛车手及生产赛车，1947年独立生产汽车。</p>
+					<p><a href="http://www.ferrari.com/zh_cn/" class="btn btn-lg btn-primary" target="_blank">查看详情</a></p>
+				</div></div>
+				<div class="item"><a href="#"><img src="image/兰博基尼.jpg" alt="兰博基尼"></a><div class="carousel-caption">
+					<h3>兰博基尼</h3>
+					<p>兰博基尼的标志是一头充满力量、正向对方攻击的斗牛，与大马力高性能跑车的特性相契合。</p>
+					<p><a href="https://www.baidu.com/link?url=Udhr80IWDEUElkpUXCci8LviAFI-swcB9QURuC07X0mLiLrrR4is4ZhAD60T5ly9&wd=&eqid=b901efe80000c177000000035844ed3a" class="btn btn-lg btn-primary" target="_blank">查看详情</a></p>
+				</div></div>
+		</div>
+			<a href="#carousel-example" class="left carousel-control" data-slide = "prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a href="#carousel-example" class="right carousel-control" data-slide = "next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+			
+
+
+
+			<!-- 三栏布局 -->
+			<div class="container" id = "column">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="image/帕加尼logo.jpg" class="img-circle" alt="">
+						<h2>帕加尼</h2>
+						<p>帕加尼所生产的超级跑车以极致的性能、大量采用纯手工打造的精湛工艺闻名于世。</p>
+						<p><a href="http://baike.baidu.com/link?url=CzgaPSHuIWh8UT7ILmiWI0vuqGJWxTxIEeVzUDEUiKnm2R1nE4poC1N5XqGLsUBlg4MX7MyomZqi1LZb_jTExvMMkFriyWodI8cb8NUb09Ve--aQiBDnGAHfa4nOA2zZ" class="btn btn-lg btn-default" target="_blank">查看详情</a></p>
+					</div>
+					<div class="col-md-4">
+						<img src="image/布加迪logo.jpg" alt="">
+						<h2>布加迪</h2>
+						<p>布加迪当时是以精巧的造车技术出名。是由意大利人埃多尔·布加迪（Ettore Bugatti）在1909年创造。</p>
+						<p><a href="http://www.bugatti.com/home/" class="btn btn-lg btn-default" target="_blank">查看详情</a></p>
+					</div>
+					<div class="col-md-4">
+						<img src="image/柯尼塞格logo.jpg" alt="">
+						<h2>柯尼塞格</h2>
+						<p>Koenigsegg一词是“刀锋”的意思，在国内曾被翻译为“柯尼赛格”，是瑞典一家汽车公司。</p>
+						<p><a href="http://www.autohome.com.cn/spec/9582/" class="btn btn-lg btn-default" target="_blank">查看详情</a></p>
+					</div>
+				</div>
+				<hr class = "dividered">
+			</div>
+			
+			<!-- 标签页 -->
+			<div class= "container">
+				<ul class="nav nav-tabs" id = "tab-list">
+					<li class = "active"><a href="#bujiadi" data-toggle = "tab">布加迪</a></li>
+					<li><a href="#kenisaige" data-toggle = "tab">柯尼塞格</a></li>
+					<li><a href="#pajiani" data-toggle = "tab">帕加尼</a></li>
+					<li><a href="#falali" data-toggle = "tab">法拉利</a></li>
+					<li><a href="#lanbojini" data-toggle = "tab">兰博基尼</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id = "bujiadi">
+						<div class="col-md-5">
+							<img src="image/布加迪logo.jpg" alt="">
+						</div>
+						<div class="col-md-5 feauture">
+							<h2>布加迪<span>Bugatti</span></h2>
+							<p>布加迪当时是以精巧的造车技术出名。是由意大利人埃多尔·布加迪（Ettore Bugatti）在1909年创造的，专门生产运动跑车和高级豪华轿车。</p>
+							<!-- <p><a href="http://www.autohome.com.cn/spec/9582/" class="btn btn-lg btn-default">点我查看详情</a></p> -->
+						</div>
+						
+					</div>
+					<div class="tab-pane" id = "kenisaige">
+						<div class="col-md-5 feauture">
+							<h2>柯尼塞格<span>Coney seck</span></h2>
+							<p>Koenigsegg一词是“刀锋”的意思，在国内曾被翻译为“柯尼赛格”，是瑞典一家汽车公司。它的标志是瑞典皇空军的标志，为一幽灵图！所以有“幽灵跑车”之称。</p>
+							<!-- <p><a href="http://www.autohome.com.cn/spec/9582/" class="btn btn-lg btn-default">点我查看详情</a></p> -->
+						</div>
+						<div class="col-md-5">
+							<img src="image/柯尼塞格logo.jpg" alt="">
+						</div>
+					</div>
+					<div class="tab-pane" id = "pajiani">
+						<div class="col-md-5">
+							<img src="image/帕加尼logo.jpg" alt="">
+						</div>
+						<div class="col-md-5  feauture">
+							<h2>帕加尼<span>Pagani</span></h2>
+							<p>帕加尼所生产的超级跑车以极致的性能、大量采用纯手工打造的精湛工艺、昂贵的售价以及订单生产的稀有产量闻名于世。旗下代表车系有：1999年正式发布的帕加尼Zonda、2011年推出的第二个全新车系帕加尼Huayra。</p>
+							<!-- <p><a href="http://www.autohome.com.cn/spec/9582/" class="btn btn-lg btn-default">点我查看详情</a></p> -->
+						</div>
+						
+					</div>
+					<div class="tab-pane" id = "falali">
+						<div class="col-md-5 feauture">
+							<h2>法拉利<span>Ferrari</span></h2>
+							<p>法拉利（Ferrari）是一家意大利汽车生产商，1929年由恩佐·法拉利（Enzo Ferrari）创办，主要制造一级方程式赛车、赛车及高性能跑车。法拉利是世界闻名的赛车和运动跑车的生产厂家，早期的法拉利赞助赛车手及生产赛车，1947年独立生产汽车。</p>
+							<!-- <p><a href="http://www.autohome.com.cn/spec/9582/" class="btn btn-lg btn-default">点我查看详情</a></p> -->
+						</div>
+						<div class="col-md-5">
+							<img src="image/法拉利logo.jpg" alt="">
+						</div>
+					</div>
+					<div class="tab-pane" id = "lanbojini">
+						<div class="col-md-5">
+							<img src="image/兰博基尼logo .jpg" alt="">
+						</div>
+						<div class="col-md-5 feauture">
+							<h2>兰博基尼<span>Lamborghini</span></h2>
+							<p>兰博基尼的标志是一头充满力量、正向对方攻击的斗牛，与大马力高性能跑车的特性相契合，同时彰显了创始人斗牛般不甘示弱的个性。</p>
+							<!-- <p><a href="http://www.autohome.com.cn/spec/9582/" class="btn btn-lg btn-default">点我查看详情</a></p> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer id = "footer">			
+				<p class = "pull-right"><a href="#top">回到顶部</a></p>
+				<span ><a style= "color: #ddd;" href="https://github.com/Holger-Lee">@Holger_Lee</a></span>
+			</footer>
+		</div>
+		<!-- 模态框 -->
+		<div class = "modal fade modal-inverse" id= "modal-example" style = "color: rgb(34,34,34);">
+			<div class = "modal-dialog">
+				<div class = "modal-content">
+					<div class = "modal-header">
+						<button type="button" class = "close" data-dismiss= "modal"></button>
+						<h4 class = 'modal-title'>超级跑车（Supercar）</h4>
+					</div>
+					<div class = "modal-body">
+						<p>在1960 年代中期，英国的汽车杂志《Car》使得“supercar”（超级跑车）这个术语正式进入了现代汽车辞典，但他们不是最早使用这个词的。《Car》的编辑当初用这个术语来形容名噪一时的兰博基尼Miura，结果也证明这个词相当贴切。</p>
+					</div>
+					<div class = "modal-footer"><button class = "btn btn-default" data-dismiss= "modal">关闭</button></div>
+				</div>
+			</div>
+		</div>
+			
+
+	<script src = "js/jquery-3.1.1.min.js"></script>
+	<script src = "js/bootstrap.min.js"></script>
+	<script>
+		$(function(){
+		$("#collapse-1 .dropdown-menu a").click(function(){
+				var href = $(this).attr("href");
+				console.log(href);
+				$("#tab-list a[href ='"+href+"']").tab("show");
+		});
+	});
+	</script>
+</body>
+</html>
